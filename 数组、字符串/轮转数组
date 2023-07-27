@@ -1,0 +1,19 @@
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        k = k%nums.size();              // 当k大于数组时可以取余
+        int tmp,j,n=nums.size();        
+        for(int i=0;i<k;i++){
+            tmp=nums[i];                // 存下第一个值 
+            j = i;
+            while((j-k+nums.size())%nums.size()!=i){    // 该位置的值由上一个位置补上
+                nums[j] = nums[(j-k+nums.size())%nums.size()];
+                j = (j-k+nums.size())%nums.size();
+                n--;
+            }
+            nums[j] = tmp;                  // 最后将存入的tmp放到最后的位置
+            n--;
+            if(n==0) break;     // 如果全部的位置都移完就退出
+        }
+    }
+};
