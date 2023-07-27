@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int n=0, m=nums.size()-1; // 双指针
+        while(n<=m){                // 头指针从头开始遍历
+            if(nums[n]!=val) n++;   // 当没有val则往后找
+            else{
+                while(m>=0&&nums[m]==val){      // !!!注意要考虑m越界的问题
+                                                // 当找到val后则把n位置的替换成m位置的数  如果m位置的是val则往前遍历
+                    m--;
+                }
+                if(m<n) break;
+                nums[n]=nums[m];
+                m--;
+                n++;
+            }
+        }
+        return n;
+    }
+};
