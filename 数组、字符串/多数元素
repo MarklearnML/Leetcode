@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        unordered_map<int, int> hash;       // 利用哈希表计数
+        for(int i=0;i<nums.size();i++){     // 遍历数组
+            auto iter = hash.find(nums[i]); // 判断该数是否被计数
+            if(iter==hash.end()){
+                hash[nums[i]]=1;            // 没见过的数存入键值对 并计数为1
+            }
+            else{
+                hash[nums[i]]++;
+                if(hash[nums[i]]>nums.size()/2) return nums[i];  // 当已经有比[n/2]多的数 直接输出
+            }
+        }
+        int max=0, num;
+        for(auto iter=hash.begin();iter!=hash.end();iter++){
+            if(iter->second>max){
+                max = iter->second;
+                num = iter->first;
+            }
+        }
+        return num;
+    }
+};
