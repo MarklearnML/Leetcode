@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int n=0,m=0,s=nums.size()-1;    // 双指针
+        while(m<s){                    
+            while(m<s&&nums[m]==nums[m+1]){     // 注意溢出问题！！！
+                m++;
+            }
+            nums[n]=nums[m];
+            n++;
+            m++;
+        }
+        if(m==s){
+            nums[n]=nums[m];
+            n++;
+        }
+        return n;
+    }
+};
