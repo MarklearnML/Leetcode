@@ -1,5 +1,5 @@
 # Leetcode
-https://github.com/MarklearnML/Leetcode/edit/main/README.md#getting-started
+https://github.com/MarklearnML/Leetcode/edit/main/README.md#jump
 
 
-<h2 id="getting-started">Getting Started</h2>
+<span id="jump">跳转内容目标</span>
