@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {    // 一次遍历
+       int inf=1e9;             
+       int minprices=inf, maxprofit=0;
+       for(int price:prices){       // 一次遍历过程中从前往后选最小的，那么遍历每一个price时都计算一个收益，收益最佳的记录下来
+           minprices=min(minprices, price);
+           maxprofit=max(maxprofit, price-minprices);
+       }
+       return maxprofit;
+    }
+};
