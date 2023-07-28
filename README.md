@@ -25,6 +25,7 @@
   * [轮转数组(环状替换、数组翻转)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E8%BD%AE%E8%BD%AC%E6%95%B0%E7%BB%84)
   * [买卖股票的最佳时机(一次遍历*)](https://github.com/MarklearnML/Leetcode/tree/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2)
   * [买卖股票的最佳时机II(一次遍历, 动态规划*， 正数相加*)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BAII)
+  * [跳跃游戏(动态规划*，贪心)](https://github.com/MarklearnML/Leetcode/tree/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2)
 # 双指针
 # 滑动窗口
 # 矩阵
