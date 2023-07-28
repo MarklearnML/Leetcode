@@ -1,0 +1,15 @@
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {      // 动态规划
+        vector<int>output(nums.size(),1);                   // 输出的数组
+        int left=1,right=1;                                 // left和right代表左右两边的乘积 用动态规划的思想
+        for(int i=1;i<nums.size();i++)
+        {
+            left=left*nums[i-1];                            // 不断的累乘左边的数
+            right=right*nums[nums.size()-i];                // 不断的累成右边的数
+            output[i]*=left;                                // 为i位乘以i左边的累乘
+            output[nums.size()-1-i]*=right;                 // 位i位乘以右边的累乘
+        }
+        return output;                                      //  最后i位上都乘以了除了i位置上左边的累乘以及右边的累乘
+    }
+};
