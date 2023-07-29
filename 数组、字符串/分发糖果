@@ -1,0 +1,52 @@
+class Solution {
+    // 具体思路：把整个分数断看成一个波浪型，即相邻的分数有升有降有相等，从前往后看，找到波峰和波谷，上升和下降的分数分开来算，分为三个阶段：上升阶段，下降阶段，平稳阶段。
+    // 上升阶段：从波谷出发，不断的更新波峰的位置，记录糖果。
+    // 下降阶段：需要记录上一个波峰的位置，当找到波谷位置时，记录波峰到波谷位置的糖果，总之确保波谷位置的糖果是1。
+    // 平稳阶段：平稳则是同时看作是波峰和波谷。
+public:
+    int candy(vector<int>& ratings) {   // 一次遍历  
+        int mins=1, up_index=0;
+        int ans=0;
+        vector<int> candys(ratings.size(), 1);
+        for(int i=1;i<ratings.size();i++){
+            if(ratings[i]<ratings[i-1]){        // 下降阶段
+                candys[i]=candys[i-1]-1;
+            }
+            else if(ratings[i]>ratings[i-1]){   // 上升阶段 
+                if(up_index==i-1){              // 若前一时刻不是波谷
+                    ans+=candys[i-1];
+                    up_index=i;
+                    candys[i]=candys[i-1]+1;
+                }
+                else{                           // 若前一时刻是波谷
+                    ans+=max(candys[up_index]-candys[i-1]+1,candys[up_index]);
+                    for(int j=up_index+1;j<i;j++){
+                        ans+=(candys[j]-candys[i-1]+1);
+                    }
+                    up_index=i;
+                    candys[i]=2;
+                }
+            }
+            else{                               // 平稳阶段
+                if(up_index==i-1){
+                    up_index=i;
+                    ans+=candys[i-1];
+                    candys[i]=1;
+                }
+                else{
+                    ans+=max(candys[up_index]-candys[i-1]+1,candys[up_index]);
+                    for(int j=up_index+1;j<i;j++){
+                        ans+=(candys[j]-candys[i-1]+1);
+                    }
+                    up_index=i;
+                    candys[i]=1;
+                }
+            }
+        }
+        ans+=max(candys[up_index]-candys[ratings.size()-1]+1,candys[up_index]);     // 最后计算
+        for(int j=up_index+1;j<ratings.size();j++){
+            ans+=(candys[j]-candys[ratings.size()-1]+1);
+        }
+        return ans;
+    }   
+};
