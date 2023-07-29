@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {   // 一次遍历 
+        int remain=0;
+        int index=0, total=0, all=0;
+        for(int i=0;i<gas.size();i++){
+            remain=gas[i]-cost[i];
+            all+=remain;
+            if(remain>0&&total<0){
+                index=i;
+                total=remain;
+            }
+            else{
+                total+=remain;
+            }
+        }
+        if(all<0){
+            return -1;
+        }
+        else{
+            return index;
+        }
+        
+    }
+};
