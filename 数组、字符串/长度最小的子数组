@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {     // 滑动窗口  快慢指针
+        int slow=0, total=0,ans=nums.size()+1;
+        for(int i=0;i<nums.size();i++){
+            total+=nums[i];
+            while(total>=target){
+                ans=min(ans,i-slow+1);
+                total-=nums[slow];
+                slow++;
+            }
+        }
+        return ans==nums.size()+1?0:ans;
+    }
+};
