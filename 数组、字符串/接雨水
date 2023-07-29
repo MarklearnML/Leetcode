@@ -1,0 +1,36 @@
+class Solution {
+public:
+    int trap(vector<int>& height) {       // 二次遍历       
+        int ans=0, index_left=0, height_left=height[0];
+        for(int i=1;i<height.size();i++){       //      ！！！初始化应该从i=1开始
+            if(height[i]>=height_left){
+                ans+=(height_left*(i-index_left-1));
+                for(int j=index_left+1;j<i;j++){
+                    ans-=height[j];
+                }
+                index_left=i;
+                height_left=height[i];
+            }
+        }
+        int index_right=height.size()-1, height_right=height[height.size()-1];
+        for(int i=height.size()-2;i>=0;i--){
+            if(height[i]>height_right){
+                ans+=(height_right*(index_right-i-1));
+                for(int j=i+1;j<index_right;j++){
+                    ans-=height[j];
+                }
+                index_right=i;
+                height_right=height[i];
+            }
+            else if(height[i]==height_right&&height_left!=height_right){
+                ans+=(height_right*(index_right-i-1));
+                for(int j=i+1;j<index_right;j++){
+                    ans-=height[j];
+                }
+                index_right=i;
+                height_right=height[i];
+            }
+        }
+        return ans;
+    }
+};
