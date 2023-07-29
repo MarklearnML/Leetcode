@@ -4,7 +4,7 @@ public:
         int left=0,right=nums.size()-1;
         int middle;
         while(left<=right){
-            middle=(left+right)/2;
+            int middle = left + ((right - left) / 2);// 防止溢出 等同于(left + right)/2
             if(nums[middle]<target){
                 left=middle+1;
             }
