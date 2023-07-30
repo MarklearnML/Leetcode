@@ -1,0 +1,84 @@
+class MyLinkedList {
+public:
+    MyLinkedList() {                    //  设置虚拟头结点会好做很多
+        list=new myLinkedList(0);
+    }
+    
+    int get(int index) {
+        myLinkedList* cur=list->next;
+        int i=0;
+        while(cur!=NULL){
+            if(i==index){
+                i=cur->val;
+                return i;
+            }
+            i++;
+            cur=cur->next;
+        }
+        return -1;
+    }
+    
+    void addAtHead(int val) {
+        myLinkedList* cur=new myLinkedList(val);
+        cur->next=list->next;
+        list->next=cur;
+    }
+    
+    void addAtTail(int val) {
+        myLinkedList *cur=list;
+        while(cur->next!=NULL){
+            cur=cur->next;
+        }
+        cur->next=new myLinkedList(val);
+    }
+    
+    void addAtIndex(int index, int val) {
+        myLinkedList *cur=new myLinkedList(0);
+        cur=list;
+        int i=0;
+        while(cur->next!=NULL){
+            if(i==index){
+                myLinkedList* tmp=new myLinkedList(val);
+                tmp->next=cur->next;
+                cur->next=tmp;
+            }
+            i++;
+            cur=cur->next;
+        }
+        if(cur->next==NULL&&i==index){
+            cur->next=new myLinkedList(val);
+        }
+    }
+    
+    void deleteAtIndex(int index) {
+        myLinkedList *cur=new myLinkedList(0);
+        cur->next=list->next;
+        list=cur;
+        int i=0;
+        while(cur->next!=NULL){
+            if(i==index){
+                cur->next=cur->next->next;
+                break;
+            }
+            i++;
+            cur=cur->next;
+        }
+    }
+private:
+    struct myLinkedList{
+        int val;
+        myLinkedList* next;
+        myLinkedList(int x) : val(x), next(NULL) {}
+    };
+    myLinkedList* list;
+};
+
+/**
+ * Your MyLinkedList object will be instantiated and called as such:
+ * MyLinkedList* obj = new MyLinkedList();
+ * int param_1 = obj->get(index);
+ * obj->addAtHead(val);
+ * obj->addAtTail(val);
+ * obj->addAtIndex(index,val);
+ * obj->deleteAtIndex(index);
+ */
