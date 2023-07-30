@@ -36,7 +36,7 @@
   * [二分查找](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE)
   * [有序数组的平方](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9)
   * [长度最小的子数组(滑动窗口)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84)
-  * [螺旋矩阵*](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5)
+  * [螺旋矩阵(循环不变量*)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%95%B0%E7%BB%84%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2/%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5)
 # 双指针
 # 滑动窗口
 # 矩阵
