@@ -1,1 +1,27 @@
-
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val) {     // 为了避免空链情况  初始化一个结点指向链表， 最后返回这个结点的next
+        ListNode* middle=new ListNode(0, nullptr);
+        middle->next=head;
+        head=middle;
+        while(middle->next!=nullptr){
+            if(middle->next->val==val){
+                middle->next=middle->next->next;
+            }
+            else{
+                middle=middle->next;
+            }
+        }
+        return head->next;
+    }
+};
