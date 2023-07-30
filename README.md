@@ -41,9 +41,12 @@
 # 滑动窗口
 # 矩阵
 # 哈希表
+哈希表的类型：数组、set、map
 # 区间
 # 栈
 # 链表
+链表的类型: 单链表、双链表、循环链表
+链表的操作：增删改查
   * [移除链表元素](https://github.com/MarklearnML/Leetcode/blob/main/%E9%93%BE%E8%A1%A8/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0)
   * [设计链表(虚拟头结点)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%93%BE%E8%A1%A8/%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8)
   * [反转链表(双指针法)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%93%BE%E8%A1%A8/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8)
