@@ -1,0 +1,26 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {     // 快慢指针   首先确定有没有环 即快慢指针会不会相遇 其次判断入口位置  即从相遇位置开始，此时head也开始移动 当相遇的结点就是入口位置，  证明见代码随想录
+        ListNode* fast=head, *slow=head;
+        while(fast!=NULL&&fast->next!=NULL){
+            fast=fast->next->next;
+            slow=slow->next;
+            if(fast==slow){
+                while(slow!=head){
+                    slow=slow->next;
+                    head=head->next;
+                }
+                return head;
+            }
+        }
+        return NULL;
+    }
+};
