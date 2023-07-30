@@ -1,0 +1,44 @@
+class Solution {
+public:
+    bool isAnagram(string s, string t) {            // 哈希表
+        unordered_map<char,int> hash_s, hash_t;
+        for(char ss:s){
+            ++hash_s[ss];
+        }
+        for(char tt:t){
+            ++hash_t[tt];
+            auto iter=hash_s.find(tt);
+            if(iter==hash_s.end()){
+                hash_s[tt]=0;
+            }
+        }
+        for(auto iter=hash_s.begin();iter!=hash_s.end();iter++){
+            if(hash_t.find(iter->first)==hash_t.end()||hash_s[iter->first]!=hash_t[iter->first]){
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+class Solution {
+public:
+    bool isAnagram(string s, string t) {            // 数组
+        int record[26] = {0};
+        for (int i = 0; i < s.size(); i++) {
+            // 并不需要记住字符a的ASCII，只要求出一个相对数值就可以了
+            record[s[i] - 'a']++;
+        }
+        for (int i = 0; i < t.size(); i++) {
+            record[t[i] - 'a']--;
+        }
+        for (int i = 0; i < 26; i++) {
+            if (record[i] != 0) {
+                // record数组如果有的元素不为零0，说明字符串s和t 一定是谁多了字符或者谁少了字符。
+                return false;
+            }
+        }
+        // record数组所有元素都为零0，说明字符串s和t是字母异位词
+        return true;
+    }
+};
