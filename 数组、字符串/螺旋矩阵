@@ -1,0 +1,32 @@
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        vector<vector<int>> v(n, vector<int>(n, 0));
+        int x=0, y=0,left=0,right=n-1,num=0;
+        while(left<=right){
+            for(x=left;x<=right;x++){
+                y=left;
+                num+=1;
+                v[y][x]=num;
+            }
+            for(y=left+1;y<=right;y++){
+                x=right;
+                num+=1;
+                v[y][x]=num;
+            }
+            for(x=right-1;x>=left;x--){
+                y=right;
+                num+=1;
+                v[y][x]=num;
+            }
+            for(y=right-1;y>left;y--){
+                x=left;
+                num+=1;
+                v[y][x]=num;
+            }
+            left++;
+            right--;
+        }
+        return v;
+    }
+};
