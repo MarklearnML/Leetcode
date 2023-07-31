@@ -1,0 +1,20 @@
+class Solution {
+public:
+    bool isHappy(int n) {
+        unordered_set<int> set;
+        int num1=n, num2=n;
+        while(num1!=1){
+            num2=0;
+            while(num1!=0){
+                num2+=(num1%10)*(num1%10);
+                num1/=10;
+            }
+            if(set.find(num2)!=set.end()||num2>2147483647){
+                return false;
+            }
+            set.insert(num2);
+            num1=num2;
+        }
+        return true;
+    }
+};
