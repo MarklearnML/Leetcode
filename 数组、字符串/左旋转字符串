@@ -1,0 +1,15 @@
+class Solution {
+public:
+    string reverse(string s, int start, int end){
+        for(int i=start,j=end;i<j;i++,j--){
+            swap(s[i],s[j]);
+        }
+        return s;
+    }
+    string reverseLeftWords(string s, int n) {      // 左旋转=反转再反转
+        s = reverse(s, 0, s.size()-1);
+        s = reverse(s, 0, s.size()-n-1);
+        s = reverse(s, s.size()-n, s.size()-1);
+        return s;
+    }
+};
