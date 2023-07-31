@@ -44,6 +44,7 @@
 哈希表的类型：数组、set、map
   * [有效的字母异位词(哈希表)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D)
   * [两个数组的交集](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86)
+  * [快乐数](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%BF%AB%E4%B9%90%E6%95%B0)
 # 区间
 # 栈
 # 链表
