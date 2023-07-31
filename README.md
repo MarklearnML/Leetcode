@@ -48,6 +48,7 @@
   * [四数之和(分组+哈希表*)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8CII)
   * [赎金信](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E8%B5%8E%E9%87%91%E4%BF%A1)
   * [三数之和(固定一个另外两个用双指针、去重*)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C)
+  * [四数之和(排序+双指针、去重剪枝*)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C)
 # 区间
 # 栈
 # 链表
