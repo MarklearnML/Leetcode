@@ -56,6 +56,7 @@
 # 栈和队列
   * [用栈实现队列](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97)
   * [用队列实现栈(一个队列就够)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88)
+  * [有效的括号](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7)
 # 链表
 链表的类型: 单链表、双链表、循环链表
 链表的操作：增删改查
