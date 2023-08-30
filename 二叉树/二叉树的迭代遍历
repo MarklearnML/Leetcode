@@ -1,0 +1,75 @@
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {    // 前序遍历
+        stack<TreeNode*> st;
+        if (root) {
+            st.push(root);
+        }
+        vector<int> result;
+        while(st.empty()==0){
+            TreeNode *n=st.top();
+            result.push_back(n->val);
+            st.pop();
+            if(n->right) st.push(n->right);
+            if(n->left)  st.push(n->left);
+        }
+        return result;
+    }
+};
+
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {    // 中序遍历
+        vector<int> result;
+        stack<TreeNode*> st;
+        if(root==NULL) return {};
+        st.push(root);
+        while(!st.empty()){
+            TreeNode* n=st.top();
+            st.pop();
+            if(n->right){
+                st.push(n->right);
+                n->right=NULL;
+            }
+            if(n->left==NULL){
+                result.push_back(n->val);
+            }
+            else{
+                st.push(n);
+                st.push(n->left);
+                n->left=NULL;
+            }
+        }
+        return result;
+    }
+};
+
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {    // 后序遍历
+        vector<int> result;
+        stack<TreeNode*> st;
+        if(root==NULL) return {};
+        st.push(root);
+        while(!st.empty()){
+            TreeNode* n=st.top();
+            st.pop();
+            if(n->left==NULL&&n->right==NULL){
+                result.push_back(n->val);
+            }
+            else{
+                st.push(n);
+                if(n->right){
+                    st.push(n->right);
+                    n->right=NULL;
+                } 
+                if(n->left){
+                    st.push(n->left);
+                    n->left=NULL;
+                }
+
+            }
+        }
+        return result;
+    }
+};
