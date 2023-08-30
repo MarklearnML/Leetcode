@@ -1,0 +1,39 @@
+class Solution {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        queue<TreeNode*> q1;
+        queue<TreeNode*> q2;
+        int token=1;
+        vector<vector<int>> result;
+        vector<int> result1;
+        if(root==NULL) return {};
+        q1.push(root);
+        while(!q1.empty()||!q2.empty()){
+            if(token==1){
+                TreeNode* n=q1.front();
+                q1.pop();
+                result1.push_back(n->val);
+                if(n->left) q2.push(n->left);
+                if(n->right) q2.push(n->right);
+                if(q1.empty()){
+                    token=-token;
+                    result.push_back(result1);
+                    result1={};
+                } 
+            }
+            else{
+                TreeNode* n=q2.front();
+                q2.pop();
+                result1.push_back(n->val);
+                if(n->left) q1.push(n->left);
+                if(n->right) q1.push(n->right);
+                if(q2.empty()){
+                    token=-token;
+                    result.push_back(result1);
+                    result1={};
+                } 
+            }
+        }
+        return result;
+    }
+};
