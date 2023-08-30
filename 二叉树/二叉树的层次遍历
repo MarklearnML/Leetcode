@@ -1,38 +1,21 @@
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-        queue<TreeNode*> q1;
-        queue<TreeNode*> q2;
-        int token=1;
+        queue<TreeNode*> que;
+        if (root != NULL) que.push(root);
         vector<vector<int>> result;
-        vector<int> result1;
-        if(root==NULL) return {};
-        q1.push(root);
-        while(!q1.empty()||!q2.empty()){
-            if(token==1){
-                TreeNode* n=q1.front();
-                q1.pop();
-                result1.push_back(n->val);
-                if(n->left) q2.push(n->left);
-                if(n->right) q2.push(n->right);
-                if(q1.empty()){
-                    token=-token;
-                    result.push_back(result1);
-                    result1={};
-                } 
+        while (!que.empty()) {
+            int size = que.size();
+            vector<int> vec;
+            // 这里一定要使用固定大小size，不要使用que.size()，因为que.size是不断变化的
+            for (int i = 0; i < size; i++) {
+                TreeNode* node = que.front();
+                que.pop();
+                vec.push_back(node->val);
+                if (node->left) que.push(node->left);
+                if (node->right) que.push(node->right);
             }
-            else{
-                TreeNode* n=q2.front();
-                q2.pop();
-                result1.push_back(n->val);
-                if(n->left) q1.push(n->left);
-                if(n->right) q1.push(n->right);
-                if(q2.empty()){
-                    token=-token;
-                    result.push_back(result1);
-                    result1={};
-                } 
-            }
+            result.push_back(vec);
         }
         return result;
     }
