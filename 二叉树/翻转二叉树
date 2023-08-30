@@ -1,0 +1,36 @@
+class Solution {
+public:
+    void invert(TreeNode* root){    // 递归法
+        if(root==NULL) return;
+        if(root->left||root->right){
+            TreeNode* n=root->left;
+            root->left=root->right;
+            root->right=n;
+            if(root->left) invert(root->left);
+            if(root->right) invert(root->right);
+        }
+    }
+    TreeNode* invertTree(TreeNode* root) {
+        invert(root);
+        return root;
+    }
+};
+
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {    // 迭代法
+        queue<TreeNode*> que;
+        if(root==NULL) return NULL;
+        que.push(root);
+        while(!que.empty()){
+            TreeNode* n=que.front();
+            que.pop();
+            TreeNode* n1=n->left;
+            n->left=n->right;
+            n->right=n1;
+            if(n->left) que.push(n->left);
+            if(n->right) que.push(n->right);
+        }
+        return root;
+    }
+};
