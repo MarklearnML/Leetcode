@@ -1,0 +1,57 @@
+class Solution {
+public:
+    int compare(TreeNode* node1, TreeNode* node2){    // 递归
+        if(node1==NULL&&node2==NULL) return 1;
+        if(node1==NULL||node2==NULL) return 0;
+        if(node1->val==node2->val){
+            return compare(node1->right, node2->left)&&compare(node1->left, node2->right);
+        }
+        else return 0;
+    }
+    bool isSymmetric(TreeNode* root) {
+        return compare(root->left,root->right);
+    }
+};
+
+
+class Solution {
+public:
+    bool isSymmetric(TreeNode* root) {    // 迭代
+        queue<TreeNode*> que;
+        que.push(root);
+        while(!que.empty()){
+            int size=que.size();
+            stack<TreeNode*> st;
+            for(int i=0;i<size;i++){
+                TreeNode* n=que.front();
+                que.pop();
+                if(i<size/2){
+                    st.push(n);
+                }
+                else{
+                    if(st.empty()){
+                    st.push(n);
+                    }
+                    else if(st.top()==NULL&&n==NULL){
+                        st.pop();
+                    }
+                    else if(st.top()==NULL||n==NULL){
+                        st.push(n);
+                    }
+                    else if(st.top()->val==n->val){
+                        st.pop();
+                    }
+                    else if(st.top()->val!=n->val){
+                        st.push(n);
+                    }
+                }
+                if(n!=NULL){
+                    que.push(n->left);
+                    que.push(n->right);
+                }
+            }
+            if(!st.empty()&&size>1) return false;
+        }
+        return true;
+    }
+};
