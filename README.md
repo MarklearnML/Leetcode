@@ -54,6 +54,9 @@
   * [四数之和(排序+双指针、去重剪枝*)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%93%88%E5%B8%8C%E8%A1%A8/%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C)
 # 区间
 # 栈和队列
+栈是容器适配器，底层容器使用不同的容器，导致栈内数据在内存中是不是连续分布。
+缺省情况下，默认底层容器是deque，那么deque的在内存中的数据分布是什么样的呢？ 答案是：不连续的，下文也会提到deque。
+经典例题：括号匹配问题、栈在系统中的应用、滑动窗口最大值、前k个最值、字符串去重问题
   * [用栈实现队列](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E7%94%A8%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97)
   * [用队列实现栈(一个队列就够)](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E7%94%A8%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88)
   * [有效的括号](https://github.com/MarklearnML/Leetcode/blob/main/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7)
