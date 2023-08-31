@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int sum=0;
+    TreeNode* travel(TreeNode*root){
+        TreeNode* root1= new TreeNode();
+        if(root==NULL) return NULL;
+        if(root->right) root1->right=travel(root->right);
+        sum+=root->val;
+        root1->val=sum;
+        if(root->left) root1->left=travel(root->left);
+        return root1;
+    }
+    TreeNode* convertBST(TreeNode* root) {
+        return travel(root);
+    }
+};
