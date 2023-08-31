@@ -1,0 +1,41 @@
+class Solution {
+public:
+    TreeNode* pre=NULL;
+    TreeNode* deleteNode(TreeNode* root, int key){
+        if(root==NULL) return NULL;
+        if(root->val==key){
+            if(root->left==NULL&&root->right==NULL){
+                if(pre==NULL) return NULL;
+                if(pre!=NULL&&pre->val<key) pre->right=NULL;
+                if(pre!=NULL&&pre->val>key) pre->left=NULL;
+                return root;
+            }
+            if(root->left==NULL){
+                if(pre==NULL) root=root->right;
+                if(pre!=NULL&&pre->val<key) pre->right=root->right;
+                if(pre!=NULL&&pre->val>key) pre->left=root->right;
+                return root;
+            }
+            if(root->right==NULL){
+                if(pre==NULL) root=root->left;
+                if(pre!=NULL&&pre->val<key) pre->right=root->left;
+                if(pre!=NULL&&pre->val>key) pre->left=root->left;
+                return root;
+            }
+            if(pre!=NULL&&pre->val<key) pre->right=root->left;
+            if(pre!=NULL&&pre->val>key) pre->left=root->left;
+            pre=root->left->right;
+            root->left->right=root->right;
+            TreeNode* cur=root->right;
+            while(cur->left!=NULL){
+                cur=cur->left;
+            }
+            cur->left=pre;
+            return root->left;
+        }
+        pre=root;
+        if(root->val>key) deleteNode(root->left, key);
+        if(root->val<key) deleteNode(root->right, key);
+        return root;
+    }
+};
