@@ -89,6 +89,7 @@
   * [从中序与后序遍历序列构造二叉树(*递归)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BB%8E%E4%B8%AD%E5%BA%8F%E4%B8%8E%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86%E5%BA%8F%E5%88%97%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91)
   * [最大二叉树](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91)
   * [合并二叉树](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91)
+  * [二叉搜索树的搜索](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%90%9C%E7%B4%A2)
 # 图
 # 回溯
 # 分治
