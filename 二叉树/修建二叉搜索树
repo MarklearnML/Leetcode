@@ -1,0 +1,38 @@
+class Solution {
+public:
+    TreeNode* trimbst(TreeNode* root, TreeNode* pre, int low, int high) {
+        if(root->val<low){
+            if(pre!=NULL){
+                if(root->right==NULL) pre->left=NULL;
+                else{
+                    pre->left=root->right;
+                    trimbst(pre->left, pre, low, high);
+                }
+            }
+            else{
+                if(root->right) root=trimbst(root->right, pre, low, high);
+                else return NULL;
+            }
+        }
+        if(root->val>high){
+            if(pre!=NULL){
+                if(root->left==NULL) pre->right=NULL;
+                else{
+                    pre->right=root->left;
+                    trimbst(pre->right, pre, low, high);
+                } 
+            }
+            else{
+                if(root->left) root=trimbst(root->left, pre, low, high);
+                else return NULL;
+            }
+        }
+        pre=root;
+        if(root->left) trimbst(root->left, pre, low, high);
+        if(root->right) trimbst(root->right, pre, low, high);
+        return root;
+    }
+    TreeNode* trimBST(TreeNode* root, int low, int high) {
+        return trimbst(root, NULL, low, high);
+    }
+};
