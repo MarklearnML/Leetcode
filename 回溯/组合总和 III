@@ -1,0 +1,28 @@
+class Solution {
+public:
+    vector<vector<int>> result;
+    vector<int> v;
+    int sum=0;
+    void back(int j, int k, int n){
+        if(v.size()==k){
+            if(sum==n) result.push_back(v); 
+            return;
+        }
+        for(int i=j;i<=9;i++){
+            v.push_back(i);
+            sum+=i;
+            if(sum>n){          // 剪枝
+                sum-=i;
+                v.pop_back();
+                break;
+            }
+            back(i+1, k, n);
+            v.pop_back();
+            sum-=i;
+        }
+    }
+    vector<vector<int>> combinationSum3(int k, int n) {
+        back(1, k, n);
+        return result;
+    }
+};
