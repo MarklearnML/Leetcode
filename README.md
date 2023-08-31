@@ -75,6 +75,7 @@
   * [环形链表(快慢指针*、哈希表法)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%93%BE%E8%A1%A8/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II)
 # 二叉树
 题目跟一层有关的均可用层次遍历(例：层里最大值，层里平均值，右视图，左视图)
+二叉搜索树的中序遍历是有序的
   * [二叉树的递归遍历](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%80%92%E5%BD%92%E9%81%8D%E5%8E%86)
   * [二叉树的迭代遍历(*用栈来存放树结点)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BF%AD%E4%BB%A3%E9%81%8D%E5%8E%86)
   * [二叉树的层次遍历(队列)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86)
@@ -90,7 +91,8 @@
   * [最大二叉树](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91)
   * [合并二叉树](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E5%90%88%E5%B9%B6%E4%BA%8C%E5%8F%89%E6%A0%91)
   * [二叉搜索树的搜索](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%90%9C%E7%B4%A2)
-  * [验证二叉搜索树(中序遍历下，输出的二叉搜索树节点的数值是有序序列)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
+  * [验证二叉搜索树(中序遍历)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
+  * [二叉搜索树的最小绝对差(中序遍历)](https://github.com/MarklearnML/Leetcode/blob/main/%E4%BA%8C%E5%8F%89%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E7%BB%9D%E5%AF%B9%E5%B7%AE)
 # 图
 # 回溯
 # 分治
