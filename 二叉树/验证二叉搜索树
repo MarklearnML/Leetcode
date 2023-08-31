@@ -1,0 +1,44 @@
+class Solution {
+public:
+    long long maxVal = LONG_MIN; // 因为后台测试数据中有int最小值
+    bool isValidBST(TreeNode* root) {
+        if (root == NULL) return true;
+
+        bool left = isValidBST(root->left);
+        // 中序遍历，验证遍历的元素是不是从小到大
+        if (maxVal < root->val) maxVal = root->val;
+        else return false;
+        bool right = isValidBST(root->right);
+
+        return left && right;
+    }
+};
+
+class Solution {
+public:
+    vector<int> isvalidBST(TreeNode* root){
+        if(root->left==NULL&&root->right==NULL) return {1, root->val, root->val};
+        if(root->left==NULL){
+            vector<int> v=isvalidBST(root->right);
+            if(v[0]==1&&v[1]>root->val) return {1, root->val, max(root->val, v[2])};
+            else return {0, root->val, root->val};
+        }
+        if(root->right==NULL){
+            vector<int> v=isvalidBST(root->left);
+            if(v[0]==1&&v[2]<root->val) return {1, min(root->val, v[1]), root->val};
+            else return {0, root->val, root->val};
+        }
+        vector<int> v1=isvalidBST(root->left);
+        vector<int> v2=isvalidBST(root->right);
+        if(v1[0]==0||v2[0]==0) return {0, root->val, root->val};
+        else{
+            if(v1[2]<root->val&&v2[1]>root->val){
+                return {1, min(root->val, v1[1]), max(root->val, v2[2])};
+            }
+            else return {0, root->val, root->val};
+        }
+    }
+    bool isValidBST(TreeNode* root) {
+        return isvalidBST(root)[0];
+    }
+};
