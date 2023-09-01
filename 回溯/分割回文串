@@ -1,0 +1,30 @@
+class Solution {
+public:
+    vector<vector<string>> result;
+    vector<string> v;
+    bool isPalindrome(const std::string& str) {
+        std::string reversedStr = str;
+        std::reverse(reversedStr.begin(), reversedStr.end());
+
+        return (str == reversedStr);
+    }
+    void back(string &s, int k, string s1){
+        if(k==s.size()){
+            result.push_back(v);
+            return;
+        }
+        for(int i=k;i<s.size();i++){
+            s1+=s[i];
+            string rev=s1;
+            if(isPalindrome(s1)){
+                v.push_back(s1);
+                back(s, i+1, "");
+                v.pop_back();
+            }
+        }
+    }
+    vector<vector<string>> partition(string &s) {
+        back(s, 0, "");
+        return result;
+    }
+};
