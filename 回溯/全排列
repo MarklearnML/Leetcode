@@ -1,0 +1,26 @@
+class Solution {
+public:
+    vector<vector<int>> result;
+    vector<int> v;
+    vector<int> used;
+    void back(vector<int>& nums){
+        if(used.size()==nums.size()){
+            result.push_back(v);
+            return;
+        }
+        for(int i=0;i<nums.size();i++){
+            auto it=find(used.begin(),used.end(), i);
+            if(it==used.end()){
+                v.push_back(nums[i]);
+                used.push_back(i);
+                back(nums);
+                used.pop_back();
+                v.pop_back();
+            }
+        }
+    }
+    vector<vector<int>> permute(vector<int>& nums) {
+        back(nums);
+        return result;
+    }
+};
