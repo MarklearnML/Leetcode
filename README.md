@@ -114,6 +114,7 @@
    * [子集](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%AD%90%E9%9B%86)
    * [子集II(*排序+剪枝)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%AD%90%E9%9B%86II)
    * [递增子序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97)
+   * [全排列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%85%A8%E6%8E%92%E5%88%97)
 # 分治
 # Kadane
 # 查找
