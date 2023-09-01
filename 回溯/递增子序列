@@ -1,0 +1,21 @@
+class Solution {
+public:
+    vector<vector<int>> result;
+    vector<int> v;
+    void back(vector<int>& nums, int k){
+        for(int i=k;i<nums.size();i++){
+            if(v.size()==0||nums[i]>=v[v.size() - 1]){
+                auto it=find(nums.begin() + k, nums.begin() + i, nums[i]); // 剪枝
+                if(it!=nums.begin() + i) continue;      // 剪枝
+                v.push_back(nums[i]);
+                if(v.size()!=1) result.push_back(v);
+                back(nums, i+1);
+                v.pop_back();
+            }
+        }
+    }
+    vector<vector<int>> findSubsequences(vector<int>& nums) {
+        back(nums, 0);
+        return result;
+    }
+};
