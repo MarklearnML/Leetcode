@@ -1,0 +1,30 @@
+class Solution {
+public:
+    vector<vector<int>> result;
+    vector<int> v;
+    vector<int> used;
+    void back(vector<int>& nums){
+        if(used.size()==nums.size()){
+            result.push_back(v);
+            return;
+        }
+        int pre=-11;
+        for(int i=0;i<nums.size();i++){
+            auto it=find(used.begin(),used.end(), i);
+            if(it==used.end()){
+                if(pre!=-11&&nums[i]==pre) continue;
+                v.push_back(nums[i]);
+                used.push_back(i);
+                back(nums);
+                v.pop_back();
+                used.pop_back();
+                pre=nums[i];
+            }
+        }
+    }
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        back(nums);
+        return result;
+    }
+};
