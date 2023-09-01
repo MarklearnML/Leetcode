@@ -113,6 +113,7 @@
    * [复原IP地址**](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%A4%8D%E5%8E%9F%20IP%20%E5%9C%B0%E5%9D%80)
    * [子集](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%AD%90%E9%9B%86)
    * [子集II(*排序+剪枝)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%AD%90%E9%9B%86II)
+   * [递增子序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97)
 # 分治
 # Kadane
 # 查找
