@@ -1,0 +1,18 @@
+class Solution {
+public:
+    vector<vector<int>> result;
+    vector<int> v;
+    void back(vector<int>& nums, int k){
+        for(int i=k;i<nums.size();i++){
+            v.push_back(nums[i]);
+            result.push_back(v);
+            back(nums, i+1);
+            v.pop_back();
+        }
+    }
+    vector<vector<int>> subsets(vector<int>& nums) {
+        back(nums, 0);
+        result.push_back({});
+        return result;
+    }
+};
