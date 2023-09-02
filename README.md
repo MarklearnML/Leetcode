@@ -10,6 +10,7 @@
 *  [二叉树](#二叉树)
 *  [图](#图)
 *  [回溯](#回溯)
+*  [贪心算法](#贪心算法)
 *  [分治](#分治)
 *  [Kadane](#Kadane)
 *  [查找](#查找)
@@ -120,6 +121,8 @@
    * [重新安排行程(***需要用到unordered_map和map，直接遍历map的key，大大的缩减了时间)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B)
    * [N皇后](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/N%E7%9A%87%E5%90%8E)
    * [解数独(***遍历+递归，不用占有太多的内存)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC)
+# 贪心算法
+   * []()
 # 分治
 # Kadane
 # 查找
