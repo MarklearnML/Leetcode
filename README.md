@@ -122,7 +122,7 @@
    * [N皇后](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/N%E7%9A%87%E5%90%8E)
    * [解数独(***遍历+递归，不用占有太多的内存)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC)
 # 贪心算法
-   * []()
+   * [分发饼干(*贪心，只遍历一次)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2)
 # 分治
 # Kadane
 # 查找
