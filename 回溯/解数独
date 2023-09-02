@@ -1,0 +1,48 @@
+class Solution {
+public:
+    bool back(vector<vector<char>>& board, int i, int j){
+        if(i==board[0].size()){
+            return true;
+        }
+        if(board[i][j]!='.'){
+            if(j<board[0].size()-1){
+                if(back(board, i, j+1)) return true;
+            } 
+            else{
+                if(back(board, i+1, 0)) return true;
+            }
+            return false;
+        }
+        unordered_set<char> used={'1','2','3','4','5','6','7','8','9'};
+        for(char k:used){
+            if(is_valid(board, i, j, k)){
+                board[i][j]=k;
+                if(j<board[0].size()-1){
+                    if(back(board, i, j+1)) return true;
+                } 
+                else{
+                    if(back(board, i+1, 0)) return true;
+                }
+                board[i][j]='.';
+            }
+        }
+        return false;
+    }
+
+    bool is_valid(vector<vector<char>>& board, int i, int j, char k){
+        for(char c:board[i]){           // 行
+            if(c==k) return false;
+        }
+        for(int z=0;z<board.size();z++){    // 列
+            if(board[z][j]==k) return false;
+        }
+        for(int z=(i/3)*3;z<(i/3)*3+3;z++)
+            for(int x=(j/3)*3;x<(j/3)*3+3;x++){
+                if(board[z][x]==k) return false;
+            }
+        return true;
+    }
+    void solveSudoku(vector<vector<char>>& board) {
+        back(board, 0, 0);
+    }
+};
