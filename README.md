@@ -117,6 +117,7 @@
    * [递增子序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97)
    * [全排列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%85%A8%E6%8E%92%E5%88%97)
    * [全排列II(*排序+剪枝)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E5%85%A8%E6%8E%92%E5%88%97II)
+   * [重新安排行程(***需要用到unordered_map和map，直接遍历map的key，大大的缩减了时间)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B)
 # 分治
 # Kadane
 # 查找
