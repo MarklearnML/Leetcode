@@ -1,0 +1,34 @@
+class Solution {
+public:
+    vector<vector<string>> result;
+    vector<string> v;
+    unordered_set<int> plus;
+    unordered_set<int> mins;
+    unordered_set<int> used;
+    void back(int n, int k){
+        if(plus.size()==n){
+            result.push_back(v);
+            return;
+        }
+        string s(n, '.');
+        for(int i=0;i<n;i++){
+            if(used.find(i) == used.end()&&find(plus.begin(), plus.end(), i+k)==plus.end()&&find(mins.begin(), mins.end(), k-i)==mins.end()){
+                s[i]='Q';
+                plus.insert(i+k);
+                mins.insert(k-i);
+                used.insert(i);
+                v.push_back(s);
+                back(n, k+1);
+                v.pop_back();
+                plus.erase(i+k);
+                mins.erase(k-i);
+                used.erase(i);
+                s[i]='.';
+            }
+        }
+    }
+    vector<vector<string>> solveNQueens(int n) {
+        back(n, 0);
+        return result;
+    }
+};
