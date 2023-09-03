@@ -1,21 +1,17 @@
+// 版本二
 class Solution {
 public:
-    int jump(vector<int>& nums) {     
-        int max_dis = nums[0];
-        int result = 0;
-        int pre = 0;
-        while (max_dis < nums.size() - 1) {
-            int next_max_dis = max_dis;
-            for (int i = pre + 1; i <= max_dis; i++) {
-                if (i + nums[i] >= nums.size() - 1) {
-                    return result + 2; // 可以直接到达最后一个元素，返回结果+2
-                }
-                next_max_dis = max(next_max_dis, i + nums[i]);
+    int jump(vector<int>& nums) {
+        int curDistance = 0;    // 当前覆盖的最远距离下标
+        int ans = 0;            // 记录走的最大步数
+        int nextDistance = 0;   // 下一步覆盖的最远距离下标
+        for (int i = 0; i < nums.size() - 1; i++) { // 注意这里是小于nums.size() - 1，这是关键所在
+            nextDistance = max(nums[i] + i, nextDistance); // 更新下一步覆盖的最远距离下标
+            if (i == curDistance) {                 // 遇到当前覆盖的最远距离下标
+                curDistance = nextDistance;         // 更新当前覆盖的最远距离下标
+                ans++;
             }
-            pre = max_dis;
-            max_dis = next_max_dis;
-            result++;
         }
-        return result + 1;
+        return ans;
     }
 };
