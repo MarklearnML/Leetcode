@@ -127,6 +127,7 @@
    * [最大子数组和(贪心、动态规划)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C)
    * [买卖股票的最佳时机 II](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%20II)
    * [跳跃游戏](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F)
+   * [跳跃游戏II](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8FII)
 # 分治
 # Kadane
 # 查找
