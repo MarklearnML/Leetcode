@@ -132,7 +132,8 @@
    * [加油站](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%8A%A0%E6%B2%B9%E7%AB%99)
    * [分糖果(前后各自遍历)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E7%B3%96%E6%9E%9C)
    * [柠檬水找零](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%9F%A0%E6%AA%AC%E6%B0%B4%E6%89%BE%E9%9B%B6)
-   * [根据身高重建队列](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97)
+   * [根据身高重建队列(*排序+贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97)
+   * [用最少数量的箭引爆气球(*排序+贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E7%94%A8%E6%9C%80%E5%B0%91%E6%95%B0%E9%87%8F%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%B0%94%E7%90%83)
 # 分治
 # Kadane
 # 查找
