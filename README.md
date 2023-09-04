@@ -138,6 +138,7 @@
    * [无重叠区间(排序+贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4)
    * [划分字母区间(***二次遍历，第一遍记录字母最远，第二遍记录分割线)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%92%E5%88%86%E5%AD%97%E6%AF%8D%E5%8C%BA%E9%97%B4)
    * [合并区间(排序+贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4)
+   * [单调递增的数字](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97)
 # 分治
 # Kadane
 # 查找
