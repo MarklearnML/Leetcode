@@ -123,6 +123,7 @@
    * [解数独(***遍历+递归，不用占有太多的内存)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%9E%E6%BA%AF/%E8%A7%A3%E6%95%B0%E7%8B%AC)
 # 贪心算法
 贪心的题目如果不要求顺序，先排序可能更好做
+一次遍历，二次遍历
    * [分发饼干(*排序 + 双指针 + 贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%88%86%E5%8F%91%E9%A5%BC%E5%B9%B2)
    * [摆动序列](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97)
    * [最大子数组和(贪心、动态规划)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C)
@@ -144,4 +145,5 @@
 # Kadane
 # 查找
 # 动态规划
+
 # 堆
