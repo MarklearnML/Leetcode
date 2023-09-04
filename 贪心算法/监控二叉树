@@ -1,0 +1,46 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int result=0;
+    int back(TreeNode* root){
+        if(root==NULL) return 1;
+        if(root->left==NULL&&root->right==NULL){
+            return 0;
+        }
+        int left=back(root->left);
+        int right=back(root->right);
+        if(left==3&&right==3){
+            result--;
+            return 2;
+        }
+        else if(left==3||right==3){
+            return 2;
+        }
+        else if(!left||!right){
+            result++;
+            return 2;
+        }
+        else if(left==2||right==2){
+            return 1;
+        }
+        else{
+            result++;
+            return 3;
+        }
+        return 1;
+    }
+    int minCameraCover(TreeNode* root) {
+        back(root);
+        return max(result, 1);
+    }
+};
