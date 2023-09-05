@@ -145,6 +145,7 @@
 # Kadane
 # 查找
 # 动态规划
+涉及一个数组分成两份重量相同或最近的两个子数组的题，想到01背包。
    * [斐波那契数](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0)
    * [爬楼梯](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%88%AC%E6%A5%BC%E6%A2%AF)
    * [使用最小花费爬楼梯](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF)
