@@ -1,0 +1,21 @@
+class Solution {
+public:
+    bool isPerfectSquare(int i) {
+        int root = sqrt(i);
+        return root * root == i;
+    }
+
+    int numSquares(int n) {
+        vector<int> dp(n+1, INT_MAX-1);
+        dp[0]=0;
+        for(int i=1;i<=n;i++){
+            if(isPerfectSquare(i)){
+                for(int j=1;j<=n;j++){
+                    if(j>=i)
+                    dp[j]=min(dp[j-i]+1, dp[j]);
+                }
+            }
+        }
+        return dp[n];
+    }
+};
