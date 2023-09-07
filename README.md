@@ -154,12 +154,17 @@
    * [不同路径 II](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84%20II)
    * [整数拆分(*两个for)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%95%B4%E6%95%B0%E6%8B%86%E5%88%86)
    * [不同的二叉搜索树(*两个for)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
+## 背包问题
+### 问能否能装满背包（或者最多装多少）对应题目如下：
    * [分割等和子集(**背包问题)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86)
    * [最后一块石头的重量 II(**背包问题)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E5%90%8E%E4%B8%80%E5%9D%97%E7%9F%B3%E5%A4%B4%E7%9A%84%E9%87%8D%E9%87%8F%20II)
+### 问装满背包有几种方法 对应题目如下：
    * [目标和(***背包问题)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%9B%AE%E6%A0%87%E5%92%8C)
-   * [一和零](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%80%E5%92%8C%E9%9B%B6)
-   * [零钱兑换 II(**完全背包组合](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%20II)
    * [组合总和 Ⅳ(**完全背包排列)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8C%20%E2%85%A3)
+   * [零钱兑换 II(**完全背包组合](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2%20II)
+### 问背包装满最大价值 对应题目如下：
+   * [一和零](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%80%E5%92%8C%E9%9B%B6)
+### 问装满背包所有物品的最小个数 对应题目如下：
    * [零钱兑换](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E9%9B%B6%E9%92%B1%E5%85%91%E6%8D%A2)
    * [完全平方数*](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0)
    * [单词拆分**](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8D%95%E8%AF%8D%E6%8B%86%E5%88%86)
