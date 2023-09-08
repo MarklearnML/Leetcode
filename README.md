@@ -183,4 +183,5 @@
 子序列问题最主要是dp如何定义，一般定义dp[i]为以num[i]元素为结尾的子序列
    * [最长递增子序列(**)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97)
    * [最长连续递增序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%BA%8F%E5%88%97)
+   * [最长重复子数组](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E9%87%8D%E5%A4%8D%E5%AD%90%E6%95%B0%E7%BB%84)
 # 堆
