@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isSubsequence(string s, string t) {
+    bool isSubsequence(string s, string t) {        // 动态规划
         vector<vector<int>> dp(s.size() + 1, vector<int>(t.size() + 1, 0));
         for (int i = 1; i <= s.size(); i++) {
             for (int j = 1; j <= t.size(); j++) {
@@ -10,5 +10,24 @@ public:
         }
         if (dp[s.size()][t.size()] == s.size()) return true;
         return false;
+    }
+};
+
+
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {    // 双指针
+        int left=0, right=0;
+        while(right<t.size()){
+            if(s[left]==t[right]){
+                left++;
+                right++;
+            }
+            else{
+                right++;
+            }
+        }
+        if(left==s.size()) return true;
+        else return false;
     }
 };
