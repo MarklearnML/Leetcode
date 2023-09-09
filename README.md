@@ -12,10 +12,8 @@
 *  [回溯](#回溯)
 *  [贪心算法](#贪心算法)
 *  [分治](#分治)
-*  [Kadane](#Kadane)
 *  [查找](#查找)
 *  [动态规划](#动态规划)
-*  [堆](#堆)
 
 # 数组/字符串
 双指针：快慢指针，头尾指针
@@ -142,7 +140,6 @@
    * [单调递增的数字](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97)
    * [监控二叉树(*后序遍历+贪心)](https://github.com/MarklearnML/Leetcode/blob/main/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/%E7%9B%91%E6%8E%A7%E4%BA%8C%E5%8F%89%E6%A0%91)
 # 分治
-# Kadane
 # 查找
 # 动态规划
 涉及一个数组分成两份重量相同或最近的两个子数组的题，想到01背包。
@@ -191,4 +188,3 @@
    * [不同的子序列***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%8D%E5%90%8C%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97)
    * [两个字符串的删除操作](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E4%B8%A4%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C)
    * [编辑距离**](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E7%BC%96%E8%BE%91%E8%B7%9D%E7%A6%BB)
-# 堆
