@@ -14,6 +14,7 @@
 *  [分治](#分治)
 *  [查找](#查找)
 *  [动态规划](#动态规划)
+*  [单调栈](#单调栈)
 
 # 数组/字符串
 双指针：快慢指针，头尾指针
@@ -192,3 +193,5 @@
 也可以用双指针做回文问题，具体就是重中点想两边扩散 判断是否是回文串
    * [回文子串](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2)
    * [最长回文子序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E5%BA%8F%E5%88%97)
+# 单调栈
+   * [每日温度**](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6)
