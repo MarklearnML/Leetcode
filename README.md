@@ -195,7 +195,10 @@
    * [最长回文子序列](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E5%BA%8F%E5%88%97)
 # 单调栈
 通常是一维数组，要寻找任一个元素的右边或者左边第一个比自己大或者小的元素的位置，此时我们就要想到可以用单调栈了。时间复杂度为O(n)
+接雨水和柱状图中最大的矩形有所不同，接雨水是找到左边最大和右边最大的下标，或者找到左边第一个大和右边第一个大的下标。柱状图是找到左边第一个最小和右边第一个最小的下标。
+单调栈的目的是找到右边第一个最大/最小的下标，同时也可以找到左边第一个最大/最小的下标，前者是入栈的元素，后者是还在栈内的元素。(为了所有元素都涉及到，前后都得插入最大/最小值~0)
    * [每日温度**](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6)
    * [下一个更大元素 I***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0%20I)
    * [下一个更大元素 II](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0%20II)
    * [接雨水(***单调栈、双指针、动态规划)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%8E%A5%E9%9B%A8%E6%B0%B4)
+   * [柱状图中最大的矩形(***单调栈、双指针)](https://github.com/MarklearnML/Leetcode/blob/main/%E5%8D%95%E8%B0%83%E6%A0%88/%E6%9F%B1%E7%8A%B6%E5%9B%BE%E4%B8%AD%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%A9%E5%BD%A2)
