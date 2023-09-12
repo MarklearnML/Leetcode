@@ -1,0 +1,18 @@
+class Solution {
+public:
+    void dfs(vector<vector<int>>& rooms, vector<bool>& used, int k){
+        used[k]=true;
+        for(int i=0;i<rooms[k].size();i++){
+            if(used[rooms[k][i]]==false)
+                dfs(rooms, used, rooms[k][i]);
+        }
+    }
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        vector<bool> used(rooms.size(), false);
+        dfs(rooms, used, 0);
+        for(int i=0;i<used.size();i++){
+            if(used[i]==false) return false;
+        }
+        return true;
+    }
+};
