@@ -212,3 +212,6 @@
    * [单词接龙***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%8D%95%E8%AF%8D%E6%8E%A5%E9%BE%99)
    * [钥匙和房间](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E9%92%A5%E5%8C%99%E5%92%8C%E6%88%BF%E9%97%B4)
    * [岛屿的周长](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF)
+  ## 并查集
+  三个作用：查找一个点的根节点，判断两个点是否一个集合(两个点的根节点是否相同)，将两个节点接入到同一个集合
+   * [寻找图中是否存在路径**](https://github.com/MarklearnML/Leetcode/tree/main/%E5%9B%BE%E8%AE%BA)
