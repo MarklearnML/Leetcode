@@ -1,0 +1,23 @@
+class Solution {
+public:
+    void dfs(vector<vector<char>>& grid, vector<vector<bool>>& used, int i, int j){        // 深搜
+        grid[i][j]=true;
+        if(i>0&&grid[i-1][j]=='1'&&used[i-1][j]==false) dfs(grid, used, i-1, j);
+        if(j>0&&grid[i][j-1]=='1'&&used[i][j-1]==false) dfs(grid, used, i, j-1);
+        if(i<grid.size()-1&&grid[i+1][j]=='1'&&used[i+1][j]==false) dfs(grid, used, i+1, j);
+        if(j<grid[0].size()-1&&grid[i][j+1]=='1'&&used[i][j+1]==false) dfs(grid, used, i, j+1);
+    }
+    int numIslands(vector<vector<char>>& grid) {
+        int result=0;
+        vector<vector<bool>> used(grid.size(), vector<bool>(grid[0].size(), false));
+        for(int i=0;i<grid.size();i++){
+            for(int j=0;j<grid[0].size();j++){
+                if(grid[i][j]=='1'&&used[i][j]==false){
+                    dfs(grid, used, i, j);
+                    result++;
+                }
+            }
+        }
+        return result;
+    }
+};
