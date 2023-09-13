@@ -215,3 +215,4 @@
   ## 并查集
   三个作用：查找一个点的根节点，判断两个点是否一个集合(两个点的根节点是否相同)，将两个节点接入到同一个集合
    * [寻找图中是否存在路径**](https://github.com/MarklearnML/Leetcode/tree/main/%E5%9B%BE%E8%AE%BA)
+   * [冗余连接 II***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5%20II)
