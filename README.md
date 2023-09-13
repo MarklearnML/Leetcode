@@ -220,3 +220,4 @@
    * [冗余连接 II***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5%20II)
 # 额外题目
    * [有多少小于当前数字的数字**](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97)
+   * [有效的山脉](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%9C%89%E6%95%88%E7%9A%84%E5%B1%B1%E8%84%89)
