@@ -1,0 +1,13 @@
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int left=0; //  左指针指向最右边的
+        for(int i=0;i<nums.size();i++){
+            if(nums[i]!=0){
+                nums[left]=nums[i];         // 如果指向的i是有值的 存在left位置上
+                if(left!=i) nums[i]=0;      // 如果left！=i说明有0，当前位置补零 相当于两数交换
+                left++;
+            }
+        }
+    }
+};
