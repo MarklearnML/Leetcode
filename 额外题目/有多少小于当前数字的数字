@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        vector<int> data=nums;
+        sort(data.begin(),data.end());
+        unordered_map<int,int> hash;
+        for(int i=data.size()-1;i>=0;i--){
+            hash[data[i]]=i;
+        }
+        vector<int> result(nums.size());
+        for(int i=0;i<nums.size();i++){
+            result[i]=hash[nums[i]];
+        }
+        return result;
+    }
+};
