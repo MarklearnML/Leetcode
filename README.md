@@ -214,5 +214,7 @@
    * [岛屿的周长](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF)
   ## 并查集
   三个作用：查找一个点的根节点，判断两个点是否一个集合(两个点的根节点是否相同)，将两个节点接入到同一个集合
+  无向图计算冗余线时只需找相同根就行，而有向图则是判断是否有入度为2或者成环，冗余线在上述两种情况
    * [寻找图中是否存在路径**](https://github.com/MarklearnML/Leetcode/tree/main/%E5%9B%BE%E8%AE%BA)
+   * [冗余连接*](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5)
    * [冗余连接 II***](https://github.com/MarklearnML/Leetcode/blob/main/%E5%9B%BE%E8%AE%BA/%E5%86%97%E4%BD%99%E8%BF%9E%E6%8E%A5%20II)
