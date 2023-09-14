@@ -1,0 +1,47 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        ListNode* node=head;
+        if(head->next==NULL) return true;
+        int sum=0;
+        while(node!=NULL){          // 统计链表长度  O(n)
+            node=node->next;
+            sum+=1;
+        }
+        node=head->next;
+        int num=0;
+        head->next=NULL;
+        while(node!=NULL){                      
+            if((sum)%2==0&&num==(sum/2)-1){         // 找到偶数时的中心点 
+                break;
+            }
+            else if((sum)%2!=0&&num==sum/2){        // 找到奇数时的中心点 
+                head=head->next;
+                break;
+            }
+            else{
+                ListNode* tmp=node->next;
+                node->next=head;
+                head=node;
+                node=tmp;
+                num++;
+            }
+        }
+        while(node!=NULL){                          // 从中心点往两边遍历    O(n) O(1)
+            if(node->val!=head->val) return false;
+            node=node->next;
+            head=head->next;
+        }
+        return true;
+    }
+};
