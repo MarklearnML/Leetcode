@@ -1,0 +1,25 @@
+class Solution {
+public:
+    vector<int> v;
+    void Tree2vec(TreeNode* root){                  // 中序遍历将二叉搜索树按顺序存在vector上
+        if(root->left) Tree2vec(root->left); 
+        v.push_back(root->val);
+        if(root->right) Tree2vec(root->right);
+    }
+    TreeNode* vec2Tree(int left, int right){       // 根据vector从中间往两边构造平衡二次搜索树
+        if(left>right) return NULL;
+        int mid=(left+right)/2;
+        TreeNode* result=new TreeNode(v[mid]);
+        result->left=vec2Tree(left, mid-1);
+        result->right=vec2Tree(mid+1, right);
+        return result;
+    }
+    TreeNode* balanceBST(TreeNode* root) {
+        Tree2vec(root);
+        int mid=(v.size()-1)/2;
+        TreeNode* result=new TreeNode(v[mid]);
+        result->left=vec2Tree(0, mid-1);
+        result->right=vec2Tree(mid+1, v.size()-1);
+        return result;
+    }
+};
