@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int result=0;
+    unordered_map<int, int> hash1;
+    unordered_map<int, int> hash2;
+    void back(int k, vector<int>& hash3){
+        if(k==hash3.size()){
+            result++;
+            return;
+        }
+        for(int i=0;i<hash3.size();i++){
+            if(hash3[i]==1) continue;
+            if(hash1.find(k-i)!=hash1.end()&&hash1[k-i]!=0) continue;
+            if(hash2.find(k+i)!=hash2.end()&&hash2[k+i]!=0) continue;
+            hash1[k-i]++;
+            hash2[k+i]++;
+            hash3[i]++;
+            back(k+1, hash3);
+            hash1[k-i]--;
+            hash2[k+i]--;
+            hash3[i]--;
+        }
+    }
+    int totalNQueens(int n) {
+        vector<int> hash3(n, 0);
+        back(0, hash3);
+        return result;
+    }
+};
