@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int result=0;
+    void back(TreeNode*root, int num){
+        if(root->left==NULL&&root->right==NULL){
+            result+=(num*10+root->val);
+            return;
+        }
+        if(root->left) back(root->left, num*10+root->val);
+        if(root->right) back(root->right, num*10+root->val);
+    }
+    int sumNumbers(TreeNode* root) {
+        back(root, 0);
+        return result;
+    }
+};
