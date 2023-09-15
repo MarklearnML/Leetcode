@@ -1,0 +1,27 @@
+class Solution {
+public:
+    bool result=true;
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if(result==false) return false;         // 剪枝，一旦result=false就一直return false
+
+        if(p==NULL||q==NULL)                // p或q为NULL的情况
+        if(p==NULL&&q==NULL) return true;
+        else return false;
+
+        if(p->val!=q->val){
+            result=false;         // 子节点不同就return faslse
+            return false;
+        }    // 值不同就return faslse
+        if(p->left&&q->left) isSameTree(p->left, q->left);
+        else if(p->left||q->left){
+            result=false;         // 子节点不同就return faslse
+            return false;
+        } 
+        if(p->right&&q->right) isSameTree(p->right, q->right);
+        else if(p->right||q->right){
+            result=false;         // 子节点不同就return faslse
+            return false;
+        } 
+        return result;
+    }
+};
