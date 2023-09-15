@@ -1,0 +1,49 @@
+class Solution {
+public:
+    bool backspaceCompare(string s, string t) {
+        int left=s.size()-1;            // 双指针从后往前遍历
+        int right=t.size()-1;
+        int num;
+        while(left>=0&&right>=0){
+            if(s[left]!='#'&&t[right]!='#'){                // 当left和right都没有遇到#时 判断是否相同， 不相同直接false
+                if(s[left]!=t[right]) return false;
+                else{
+                    left--;
+                    right--;
+                } 
+            }
+            else{                                             // 当遇到# 则left和right不断的--到该有的位置
+                num=0;
+                while(left>=0&&(s[left]=='#'||num>0)){
+                    if(s[left]!='#') num--;
+                    else num++;
+                    if(num>=0) left--;
+                }
+                num=0;
+                while(right>=0&&(t[right]=='#'||num>0)){
+                    if(t[right]!='#') num--;
+                    else num++;
+                    if(num>=0) right--;
+                }
+            }
+        }
+        if(left>=0){                                    // 遍历完后如果有一方不归零  看看剩下的是否为0 
+            num=0;
+            while(left>=0&&(s[left]=='#'||num>0)){
+                if(s[left]!='#') num--;
+                else num++;
+                if(num>=0) left--;
+            }
+        }
+        if(right>=0){
+            num=0;
+            while(right>=0&&(t[right]=='#'||num>0)){
+                if(t[right]!='#') num--;
+                else num++;
+                if(num>=0) right--;
+            }
+        }
+        if(left==right) return true;
+        return false;
+    }
+};
