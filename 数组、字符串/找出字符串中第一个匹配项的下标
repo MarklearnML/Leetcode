@@ -1,0 +1,39 @@
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        vector<int> next(needle.size());
+        int i=0;
+        int j=0;
+        getNextj(next, needle);
+        while(i<haystack.size()){
+            if(haystack[i]==needle[j]){         
+                i++;
+                j++;
+            }
+            else{
+                if(j==0){               // 遇到不等时，i不懂，j回溯到next[j-1]处   当j==0时，说明没有前缀都不相等， 那么i++
+                    i++;
+                } 
+                else {
+                    j = next[j-1];
+                }
+            }
+            if(j==needle.size()) return i-j;
+        }
+        return -1;
+    }
+    void getNextj(vector<int>& next, string needle){       
+        int j=0;            //  j指向公共前字符串后缀
+        int i=1;            //  i指向公共后字符串后缀    i用来对next赋值， j用来回溯
+        next[0]=0;
+        for(int i=1;i<next.size();i++){
+            while(j>0&&needle[i]!=needle[j]){       // 当j和i下标的值不等时， j不断回溯， 同时j得>0
+                j = next[j-1];                      //  回溯到j-1下标对应的next值
+            }
+            if(needle[i]==needle[j]) {              //  当相等时，那么此时j就加1
+                j++;
+            }
+            next[i] = j;
+        }
+    }
+};
