@@ -249,5 +249,6 @@
    * [最长递增子序列的个数*](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E7%9A%84%E4%B8%AA%E6%95%B0)
    * [根据数字二进制下 1 的数目排序***](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B%201%20%E7%9A%84%E6%95%B0%E7%9B%AE%E6%8E%92%E5%BA%8F)
    * [下一个排列****背](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97)
+   * [和为 K 的子数组**(非滑动窗口)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84)
 
 
