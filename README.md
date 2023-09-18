@@ -249,8 +249,11 @@
    * [最长递增子序列的个数*](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97%E7%9A%84%E4%B8%AA%E6%95%B0)
    * [根据数字二进制下 1 的数目排序***](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%A0%B9%E6%8D%AE%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8B%201%20%E7%9A%84%E6%95%B0%E7%9B%AE%E6%8E%92%E5%BA%8F)
    * [下一个排列****背](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97)
- 前缀和：当数组全为正时，需要找到某个连续子数组的和是否等于k时，可以用滑动窗口；当数组有正有负时，滑动窗口不适用，可以用map记录前i个数组的和，那么j-i连续子数组的和为后一段减前一段
+ ## 前缀和
+ 当数组全为正时，需要找到某个连续子数组的和是否等于k时，可以用滑动窗口；当数组有正有负时，滑动窗口不适用，可以用map记录前i个数组的和，那么j-i连续子数组的和为后一段减前一段 <br>
+ 哈希表里不一定放的是pre，可以是余数，可以是平均数等等， 主要看sum2-sum1这个公式如何推导
    * [和为 K 的子数组**(前缀和 + 哈希表)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84)
    * [连续的子数组和(***哈希表里放的是余数)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C)
+   * [剑指 Offer 42. 连续子数组的最大和](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C)
 
 
