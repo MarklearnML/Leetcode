@@ -1,0 +1,72 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* sortList(ListNode* head) {
+        if(head==NULL) return NULL;
+        if(head->next==NULL) return head;
+        return sortlist(head, NULL);
+    }
+    ListNode* sortlist(ListNode* head, ListNode* tail){
+        if(head==tail) return NULL;
+        if(head->next==tail){
+            head->next=NULL;
+            return head;
+        }
+        ListNode* slow=head, *fast=head;
+        while(fast!=tail){
+            slow=slow->next;
+            fast=fast->next->next;
+            if(fast==tail||fast->next==tail){
+                break;
+            }          
+        }
+        return merge(sortlist(head, slow), sortlist(slow, tail));
+    }
+
+    ListNode* merge(ListNode* List1, ListNode* List2){
+        if(List1==NULL) return List2;
+        if(List2==NULL) return List1;
+        ListNode* ans;
+        ListNode* result;
+        if(List1->val<List2->val){
+            ans=List1;
+            result=ans;
+            List1=List1->next;
+        }
+        else{
+            ans=List2;
+            result=ans;
+            List2=List2->next;
+        }
+        while(List1!=NULL||List2!=NULL){
+            if(List1==NULL){
+                ans->next=List2;
+                break;
+            }
+            else if(List2==NULL){
+                ans->next=List1;
+                break;
+            }
+            else if(List1->val<List2->val){
+                ans->next=List1;
+                ans=ans->next;
+                List1=List1->next;
+            }
+            else{
+                ans->next=List2;
+                ans=ans->next;
+                List2=List2->next;
+            }
+        }
+        return result;
+    }
+};
