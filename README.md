@@ -259,6 +259,7 @@
    * [连续的子数组和(***哈希表里放的是余数)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C)
    * [剑指 Offer 42. 连续子数组的最大和](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C)
    * [让所有学生保持开心的分组方法数(***排序+枚举)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E8%AE%A9%E6%89%80%E6%9C%89%E5%AD%A6%E7%94%9F%E4%BF%9D%E6%8C%81%E5%BC%80%E5%BF%83%E7%9A%84%E5%88%86%E7%BB%84%E6%96%B9%E6%B3%95%E6%95%B0)
+   * [插入区间(*二分+排序+一次遍历)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%8F%92%E5%85%A5%E5%8C%BA%E9%97%B4)   [插入区间](https://leetcode.cn/problems/insert-interval/description/?envType=study-plan-v2&envId=top-interview-150)
 # 排序
    * [快速排序](https://github.com/MarklearnML/Leetcode/blob/main/%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)   [排序数组](https://leetcode.cn/problems/sort-an-array/)
 
