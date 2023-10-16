@@ -1,4 +1,5 @@
 // 对比两数组后面的数，比较大的就放到第一个数组后 然后取完的数组个数减一   类似双指针的思想
+从后面往前存 ，因为后面没有数据
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
