@@ -266,4 +266,4 @@
    * [快速排序](https://github.com/MarklearnML/Leetcode/blob/main/%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)   [排序数组](https://leetcode.cn/problems/sort-an-array/)
 
 # 真题
-   *[小美的树上染色](https://www.nowcoder.com/exam/test/77135382/detail?pid=51799538&examPageSource=Company&testCallback=https%3A%2F%2Fwww.nowcoder.com%2Fexam%2Fcompany&testclass=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91) 树除了二叉树基本都是用图的结构，从子节点(入度为1)进行拓扑遍历  存储图结构可以用一个List[] 其中数组存每个节点 每个节点存邻接点
+   *[小美的树上染色](https://www.nowcoder.com/exam/test/77135382/detail?pid=51799538&examPageSource=Company&testCallback=https%3A%2F%2Fwww.nowcoder.com%2Fexam%2Fcompany&testclass=%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91) 树除了二叉树基本都是用图的结构，从子节点(入度为1)进行拓扑遍历  存储图结构一般用邻接矩阵(二维数组)  邻接列表(包含列表的列表)  边列表(包含所有边的列表)
