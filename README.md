@@ -260,6 +260,7 @@
    * [乘积最大子数组 动态规划经典题]
    * [最小栈  必做]
    * [寻找重复数 必做]
+   * [路径总和 III]
  ## 前缀和
  当数组全为正时，需要找到某个连续子数组的和是否等于k时，可以用滑动窗口；当数组有正有负时，滑动窗口不适用，可以用map记录前i个数组的和，那么j-i连续子数组的和为后一段减前一段 <br>
  哈希表里不一定放的是pre，可以是余数，可以是平均数等等， 主要看sum2-sum1这个公式如何推导
@@ -270,6 +271,7 @@
    * [插入区间(*二分+排序+一次遍历)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%8F%92%E5%85%A5%E5%8C%BA%E9%97%B4)   [插入区间](https://leetcode.cn/problems/insert-interval/description/?envType=study-plan-v2&envId=top-interview-150)
    * [最长连续序列***(set.count()哈希+枚举)](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E5%BA%8F%E5%88%97)   [leetcode](https://leetcode.cn/problems/longest-consecutive-sequence/solutions/276931/zui-chang-lian-xu-xu-lie-by-leetcode-solution/?envType=study-plan-v2&envId=top-interview-150)
    * [反转链表 II](https://github.com/MarklearnML/Leetcode/blob/main/%E9%A2%9D%E5%A4%96%E9%A2%98%E7%9B%AE/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%20II)
+   * [路径总和 III]
 # 排序
    * [快速排序](https://github.com/MarklearnML/Leetcode/blob/main/%E6%8E%92%E5%BA%8F/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)   [排序数组](https://leetcode.cn/problems/sort-an-array/)
 
